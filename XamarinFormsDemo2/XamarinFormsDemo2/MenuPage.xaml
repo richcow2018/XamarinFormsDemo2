@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+                  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                  x:Class="XamarinFormsDemo2.MenuPage"
+                  xmlns:local="clr-namespace:XamarinFormsDemo2;assembly=XamarinFormsDemo2">
+    
+    <MasterDetailPage.Master>
+        <ContentPage Title="Menu">
+            <StackLayout Orientation="Vertical">
+                <Button Text="Sports"/>
+                <Button Text="Economy"/>
+                <Button Text="Eduction"/>
+                <Button Text="Science"/>
+            </StackLayout>
+        </ContentPage>
+    </MasterDetailPage.Master>
+
+    <MasterDetailPage.Detail>
+        <local:HomePage/>
+    </MasterDetailPage.Detail>
+    
+</MasterDetailPage>
